@@ -6,7 +6,7 @@
 
 ```bash
 # this requires babel-core as peer dependency
-yarn add babel-load-config babel-core --dev
+yarn add babel-load-config babel-core
 ```
 
 ## Usage
