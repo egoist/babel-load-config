@@ -1,0 +1,49 @@
+{
+  "name": "babel-load-config",
+  "version": "0.0.0",
+  "description": "Use exactly the same way babel-core does to load .babelrc",
+  "repository": {
+    "url": "egoist/babel-load-config",
+    "type": "git"
+  },
+  "main": "dist/index.common.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest && npm run lint && npm run build",
+    "lint": "xo",
+    "build": "bili --name index --buble.target.node 4"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "es2015"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "bili": "^0.14.0",
+    "eslint-config-rem": "^3.0.0",
+    "jest-cli": "^18.1.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "extends": "rem",
+    "esnext": true,
+    "envs": [
+      "jest"
+    ]
+  },
+  "peerDependencies": {
+    "babel-core": "^6.23.1"
+  }
+}
