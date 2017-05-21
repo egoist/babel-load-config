@@ -1,6 +1,6 @@
 {
   "name": "babel-load-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Use exactly the same way babel-core does to load .babelrc",
   "repository": {
     "url": "egoist/babel-load-config",
