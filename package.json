@@ -30,6 +30,7 @@
     }
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
     "babel-preset-es2015": "^6.22.0",
     "bili": "^0.14.0",
     "eslint-config-rem": "^3.0.0",
@@ -42,8 +43,5 @@
     "envs": [
       "jest"
     ]
-  },
-  "peerDependencies": {
-    "babel-core": "^6.23.1"
   }
 }

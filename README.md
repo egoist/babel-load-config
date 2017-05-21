@@ -13,8 +13,9 @@ yarn add babel-load-config babel-core
 
 ```js
 const loadConfig = require('babel-load-config')
+const buildConfigChain = require('babel-core/lib/transformation/file/options/build-config-chain')
 
-const config = loadConfig(process.cwd())
+const config = loadConfig(process.cwd(), buildConfigChain)
 //=> {loc: '/User/name/dir/.babelrc', options: {presets: []}}
 ```
 
